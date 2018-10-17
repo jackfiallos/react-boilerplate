@@ -1,0 +1,13 @@
+{
+    "app.title": "Welcome to {what}",
+    "app.intro": "To get started, edit <code>src/app/components/screens/Main.js</code> and save to reload.",
+    "buttons.english": "English",
+    "buttons.spanish": "Spanish",
+    "task.taskList": "Task List",
+    "task.taskTitle": "Task name here",
+    "task.emptyList": "Empty List",
+    "task.addTask": "Add Task",
+    "login.title": "Login",
+    "about.title": "About",
+    "features.title": "Features"
+}

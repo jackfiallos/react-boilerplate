@@ -1,0 +1,13 @@
+{
+    "app.title": "Bienvenido a {what}",
+    "app.intro": "Para empezar, edita <code>src/app/components/screens/Main.js</code> y sálvalo para ver los cambios.",
+    "buttons.english": "Inglés",
+    "buttons.spanish": "Español",
+    "task.taskList": "Lista de tareas",
+    "task.taskTitle": "Nombre de la tarea aquí",
+    "task.emptyList": "Lista vacía",
+    "task.addTask": "Agregar tarea",
+    "login.title": "Iniciar Sesión",
+    "about.title": "Acerca de",
+    "features.title": "Características"
+}

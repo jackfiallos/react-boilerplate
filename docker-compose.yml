@@ -1,0 +1,17 @@
+version: "3"
+services:
+    react:
+        image: react:v1
+        container_name: react
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - './src:/var/app/src'
+            - '/var/app/node_modules'
+        ports:
+            - "3000:3000"
+            - "35729:35729"
+        environment:
+            - NODE_ENV=dev
+            - REACT_APP_TEST=yoyo
