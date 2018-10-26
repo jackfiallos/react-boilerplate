@@ -13,8 +13,5 @@ function* watchPosts() {
 }
 
 export default function* rootSaga() {
-    yield all([
-        watchCreateArticleRequest(),
-        watchPosts()
-    ]);
+    yield all([watchCreateArticleRequest(), watchPosts()]);
 }

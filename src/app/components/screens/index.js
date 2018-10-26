@@ -4,3 +4,4 @@ export { default as Login } from './Login';
 export { default as Main } from './Main';
 export { default as Redux } from './Redux';
 export { default as Signup } from './Signup';
+export { default as Lazy } from './Lazy';

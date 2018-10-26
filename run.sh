@@ -10,7 +10,10 @@ case "$1" in
     test)
         yarn test $@
         ;;
+    lint)
+        yarn lint $@
+        ;;
     *)
-        echo "Use command: run.sh {start|build|test}"
+        echo "Use command: run.sh {start|build|test|lint}"
         exec "$@"
 esac

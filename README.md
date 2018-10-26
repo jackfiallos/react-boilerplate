@@ -2884,31 +2884,3 @@ pth. You can find more discussion in [this issue](https://github.com/facebook/cr
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebook/create-react-app/iss
 ues) or [contribute some!](https://github.com/facebook/create-react-app/edit/master/packages/react-scripts/template/README.md)
-
-# FEATURES
-
-This is like any other boilerplate but with some packages already configured and ready to work.
-
-- react-intl to handle translations
-- react-router-dom to handle internal routes and layouts
-- react-redux to handle state container
-- redux-saga to handle side effects
-- axios to handle request through interceptors
-
-# DOCKER INSTALLATION
-
-Having your docker installed, from ./{project_path} in your terminal you can run the following command to build the image:
-
-```
-./exec.sh compose-build
-```
-
-The exec.sh bash file has different commands, some useful commands for run, rebuild, test or connect to ssh container (feel free to take a look and modify if needed).
-
-If you want to copy from your container to your host, please use the next command:
-
-```
-docker cp <containerId>:/file/path/within/container /host/path/target
-```
-
-Once your image is running, you can open localhost:3000 to see the boilerplate running.

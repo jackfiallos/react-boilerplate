@@ -13,6 +13,7 @@ import AboutContainer from './app/views/about/AboutContainer';
 import SignupContainer from './app/views/signup/SignupContainer';
 import ReduxContainer from './app/views/redux/ReduxContainer';
 
+import { Lazy as LazyComponent } from './app/components/screens';
 import { NotFound } from './app/components/generic';
 
 // store config
@@ -28,6 +29,7 @@ const DefaultLayout = () => (
                 <MainLayout path="/about" component={AboutContainer} />
                 <MainLayout path="/signup" component={SignupContainer} />
                 <MainLayout path="/redux" component={ReduxContainer} />
+                <MainLayout path="/lazy" component={LazyComponent} />
                 <EmptyLayout component={NotFound} />
             </Switch>
         </Router>

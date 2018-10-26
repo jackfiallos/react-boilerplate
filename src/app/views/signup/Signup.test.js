@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallowWithIntl } from 'enzyme-react-intl';
+
 import { Signup } from '../../components/screens';
 
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Signup />, div);
-    ReactDOM.unmountComponentAtNode(div);
+describe('Signup component', () => {
+    // global render testing
+    test('should shallow correctly', () => {
+        expect(shallowWithIntl(<Signup />)).toMatchSnapshot();
+    });
 });

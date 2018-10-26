@@ -3,27 +3,24 @@ import { RECEIVE_POSTS, FAILURE_POSTS, REQUEST_POSTS } from '../constants';
 const initialState = {
     posts: [],
     loading: false,
-    error: undefined
+    error: undefined,
 };
 
 const postsReducer = (state = initialState, action = {}) => {
-    let newState = {...state};
+    let newState = { ...state };
 
     switch (action.type) {
         case REQUEST_POSTS:
             newState = {
                 ...newState,
-                loading: true
+                loading: true,
             };
             return newState;
         case RECEIVE_POSTS:
             newState = {
                 ...newState,
-                posts: [
-                    ...newState.posts,
-                    ...action.payload
-                ],
-                loading: false
+                posts: [...newState.posts, ...action.payload],
+                loading: false,
             };
             return newState;
         case FAILURE_POSTS:
@@ -31,7 +28,7 @@ const postsReducer = (state = initialState, action = {}) => {
                 ...newState,
                 posts: [],
                 error: action.error,
-                loading: false
+                loading: false,
             };
             return newState;
         default:

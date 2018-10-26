@@ -22,6 +22,9 @@ case "$1" in
   test)
     docker container run -it -v $(pwd)/src:/var/app/src react:v1 test
     ;;
+  lint)
+    docker container run -it -v $(pwd)/src:/var/app/src reactx:v1 lint
+    ;;
   build-react)
     docker container run -it -v $(pwd)/src:/var/app/src react:v1 build
     ;;

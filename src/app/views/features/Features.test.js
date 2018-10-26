@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallowWithIntl } from 'enzyme-react-intl';
+
 import { Features } from '../../components/screens';
 
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Features />, div);
-    ReactDOM.unmountComponentAtNode(div);
+describe('Features component', () => {
+    // global render testing
+    test('should shallow correctly', () => {
+        expect(shallowWithIntl(<Features />)).toMatchSnapshot();
+    });
 });

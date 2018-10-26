@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import { shallowWithIntl } from 'intl-helper';
+import { shallowWithIntl } from 'enzyme-react-intl';
 
 import { Main } from '../../components/screens';
 
-it('renders without crashing', () => {
-    // const customMessage = shallowWithIntl(<CustomMessage />, { context: intl });
-    const div = document.createElement('div');
-    ReactDOM.render(<Main />, div);
-    ReactDOM.unmountComponentAtNode(div);
+describe('Main component', () => {
+    // global render testing
+    test('should shallow correctly', () => {
+        expect(shallowWithIntl(<Main />)).toMatchSnapshot();
+    });
 });

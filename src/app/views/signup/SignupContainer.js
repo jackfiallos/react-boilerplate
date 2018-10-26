@@ -1,17 +1,17 @@
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { Signup as SignupComponent } from '../../components/screens';
 
 // expose props
-const mapStateToProps = (state) => {
+const mapStateToProps = () => {
     return {};
 };
 
 // expose methods
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = () => {
     return {};
 };
 
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    mapDispatchToProps,
 )(SignupComponent);

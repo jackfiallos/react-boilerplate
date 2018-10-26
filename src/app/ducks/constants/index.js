@@ -9,3 +9,4 @@ export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 export const FAILURE_POSTS = 'FAILURE_POSTS';
 
 export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
+export const CHANGE_THEME = 'CHANGE_THEME';
